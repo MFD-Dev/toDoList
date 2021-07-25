@@ -43,7 +43,8 @@
             };
             // then add it to todos arr
             todos.push(todo);
-            renderTodos(todos); // then renders them between <ul> </ul>
+            // renderTodos(todos); // then renders them between <ul> </ul>
+            addToLocalStorage(todos); //store it in localStorage
 
             //finally clear the input box value
             todoInput.value = '';
@@ -67,6 +68,8 @@ function renderTodos(todos) {
 
         // make a li element and fill it                                
         const li = document.createElement('li');
+        // <li class="item"></li>
+        li.setAttribute('class', 'item');
         // <li class="item" data-key="20200708"> </li> 
         li.setAttribute('data-key', item.id);
         /* <li class="item" data-key="20200708"> 
