@@ -6,7 +6,7 @@
     // toggle(id)
     // deleteTodo(id)
 
-
+console.log(axios)
     // select everything
     // select the todo-form
     // this will grab the content from these querySelectors
