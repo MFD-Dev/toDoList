@@ -1,4 +1,4 @@
-/* common styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +10,6 @@ body {
   display: flex;
   justify-content: center;
   background: aqua;
-  /* background: linear-gradient(#F00000, #DC281E); */
   font-family: sans-serif;
 }
 
@@ -20,12 +19,9 @@ button:hover {
 }
 
 ul {
-  list-style-type: none; /* get rid of bullet points on side of list items */
+  list-style-type: none; 
 }
 
-/* common style ends */
-
-/* container */
 .container {
   min-width: 700px;
   display: flex;
@@ -38,8 +34,6 @@ h1 {
   color: #fff;
   font-size: 3rem;
 }
-
-/* todo-form */
 
 .todo-form {
   margin: 40px 0px;
@@ -56,8 +50,7 @@ h1 {
 }
 
 .add-button {
-    background-color: rgb(237, 162, 100);
-  /* background-color: #0000ff; */
+  background-color: rgb(237, 162, 100);
   color: #fff;
   border: none;
   outline: none;
@@ -66,14 +59,10 @@ h1 {
   font-size: 1.2rem;
 }
 
-/* todo-form style ends */
-
-/* todo-items */
 .todo-items {
   min-width: 350px;
 }
 
-/* each li with class="item" */
 .item {
   background-color: #fff;
   padding: 10px;
@@ -89,8 +78,6 @@ h1 {
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-
-/* item style end */
 
 .checkbox {
   margin-right: 10px;
@@ -108,11 +95,6 @@ h1 {
   font-weight: 550;
 }
 
-/* applied when the todo item is checked */
 .checked { 
   text-decoration: line-through;
 }
-
-/* todo-items style ends */
-
-/* container style ends */
