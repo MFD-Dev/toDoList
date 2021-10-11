@@ -22,7 +22,7 @@ axios.get("")
                 completed: false 
             };
             todos.push(todo);           
-            addToLocalStorage(todos); 
+            storeAndRender(todos); 
             todoInput.value = '';
         }
     }
@@ -40,14 +40,17 @@ function renderTodos(todos) {
         }
        li.innerHTML = `
       <input type="checkbox" class="checkbox" ${checked}>
+    
+     
       ${item.name}
+      <button class="edit-button">EDIT</button>
       <button class="delete-button">X</button>
     `;
     todoItemsList.append(li)  
     });
 }
 
-function addToLocalStorage(todos) {
+function storeAndRender(todos) {
     localStorage.setItem('todos', JSON.stringify(todos));        
     renderTodos(todos);
 }
@@ -67,7 +70,7 @@ function toggle(id) {
     }
   });
 
-  addToLocalStorage(todos);
+  storeAndRender(todos);
 }
 
 
@@ -76,7 +79,7 @@ function deleteTodo(id) {
     return item.id != id;
   });
 
-  addToLocalStorage(todos);
+  storeAndRender(todos);
 }
 
 getFromLocalStorage();

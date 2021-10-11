@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>ToDo</h1>
+        <h1>Please add a ToDo below:</h1>
 
         <form class="todo-form">
             <input type="text" class="todo-input" placeholder="Add a ToDo">
@@ -19,21 +19,23 @@
         </form> <br>
        
         <div id="create-user">
-    <h1>Create User</h1> <br>
+    <h1>Current Todos</h1> <br>
     <form>
-        <input type="text" id="first_name" placeholder="Enter First Name">
-        <input type="text"  id="last_name" placeholder="Enter Last Name">
-        <button type="submit">Add User</button>
+        
     </form>
+    
 </div> <br>
-  
-
         <ul class="todo-items">
-         <li class="checkbox" type="checkbox" >
-            Go to Gym
-            <button class="delete-button" >X</button>
-        </li>
+            <li class="checkbox" type="checkbox" >
+                <label for=""> </label> 
+                <button class="edit-button" >EDIT</button> <br>
+                <button class="delete-button" >X</button>          
+            </li>       
         </ul>
+        
+    </div>
+    <div>
+       
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
